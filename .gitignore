@@ -1,0 +1,40 @@
+# Variables y secretos
+.env
+.env.*
+*.pem
+*.key
+
+# Folders
+/bin/
+/agent_demo/backups/
+
+# Python
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.venvs/
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+
+# Tests / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs y caché
+*.log
+.cache/
+
+# Sistema
+.DS_Store
+Thumbs.db
