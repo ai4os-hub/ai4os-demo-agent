@@ -18,7 +18,6 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 ENV_FILE = PROJECT_ROOT / ".env"
 load_dotenv(ENV_FILE)
 
-LITELLM_BASE_URL = os.environ["LITELLM_BASE_URL"]
 LITELLM_API_KEY = os.environ["LITELLM_API_KEY"]
 LOCAL_BASE_URL = os.environ["LOCAL_BASE_URL"]
 LITELLM_AGENT_MODEL = os.environ['LITELLM_AGENT_MODEL']
@@ -96,7 +95,7 @@ async def create_local_backends():
 async def lifespan(app: FastAPI):
 
     logger.info("Starting local A2A agents...")
-    # agents are created with a common interface
+    # agents are created with the common interface
     backends = await create_local_backends()
 
     # agents are mounted at their respective endpoints

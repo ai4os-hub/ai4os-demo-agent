@@ -6,7 +6,7 @@ The repository provides several definitions of the same agent using different fr
 
 All the agents are served from the same FastAPI application and use a common A2A execution layer.
 
-Agents can be created and tested locally without registering them in LiteLLM, while still accessing language models and MCP tools through the LiteLLM gateway using a single shared API key.
+Agents can be created and tested locally without registering them in LiteLLM, while still accessing language models and MCP tools through the LiteLLM gateway using an API key.
 
 
 ## Architecture
@@ -42,7 +42,7 @@ Python 3.10 or newer is required.
 Clone the repository and install the package:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/ai4os-hub/ai4os-demo-agent
 cd agent-demo
 python3 -m pip install -e .
 ```
